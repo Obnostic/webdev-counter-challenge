@@ -9,50 +9,34 @@ const decrementBtn = document.querySelector(".decrement-btn");
 
 
 function incrementCount() {
-    count++;
+    count++ ;
 }
 
 
 function decrementCount() {
-    count--;
+    count-- ;
 }
 
 
 function resetCount() {
-   count=0;
+   count=0 ;
 }
 
 function renderUpdatedCount() {
     countElement.innerText = count;
 }
 
-incrementBtn.addEventListener("click", incrementCount () {
-    // Write code below this line
-
-
-
-    // STOP HERE
-
-
+incrementBtn.addEventListener("click", () => {
+    incrementCount();
     renderUpdatedCount();
 });
 
-resetBtn.addEventListener("click", resetCount () {
-    // Write code below this line
-    
-
-    // STOP HERE
-    
-    
+resetBtn.addEventListener("click", () => {
+    resetCount ();   
     renderUpdatedCount();
 });
 
-decrementBtn.addEventListener("click", decrementCount () {
-    // Write code below this line
-
-
-    // STOP HERE
-
-
+decrementBtn.addEventListener("click", () => {
+    decrementCount ();
     renderUpdatedCount();
 });
