@@ -1,4 +1,4 @@
-"using strict";
+"use strict";
 
 let count = 0;
 
@@ -9,27 +9,24 @@ const decrementBtn = document.querySelector(".decrement-btn");
 
 
 function incrementCount() {
-    // Write the relevant code in this block
-
+    count++;
 }
 
 
 function decrementCount() {
-    // Write the relevant code in this block
-
+    count--;
 }
 
 
 function resetCount() {
-    // Write the relevant code in this block
-    
+   count=0;
 }
 
 function renderUpdatedCount() {
     countElement.innerText = count;
 }
 
-incrementBtn.addEventListener("click", function () {
+incrementBtn.addEventListener("click", incrementCount () {
     // Write code below this line
 
 
@@ -40,7 +37,7 @@ incrementBtn.addEventListener("click", function () {
     renderUpdatedCount();
 });
 
-resetBtn.addEventListener("click", function () {
+resetBtn.addEventListener("click", resetCount () {
     // Write code below this line
     
 
@@ -50,7 +47,7 @@ resetBtn.addEventListener("click", function () {
     renderUpdatedCount();
 });
 
-decrementBtn.addEventListener("click", function () {
+decrementBtn.addEventListener("click", decrementCount () {
     // Write code below this line
 
 
