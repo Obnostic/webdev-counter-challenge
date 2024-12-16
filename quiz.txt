@@ -1,5 +1,14 @@
 1. Why do you use "using strict" at the top of your JS files?
+To tell the compiler to process in strict mode, tightening up parsing and error handling.
+Strict mode enforces adherence to syntax, reducing possibility of errors.
+
 2. What does line 3 mean?
+Initialize the counter to zero so the variable does not start out full of junk.
+
 3. What is happening on lines 5-8 and why?
+Defining each function and also linking it to the classes in the index.html.
+ 
 4. If you implemented the functionality of the buttons,
    why do you think I wrote the JS code the way I did?
+Direct tracing of each action as a seperate entitity starting with the query selector,
+the math expression, and interactivity with the GUI.
